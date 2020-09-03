@@ -124,10 +124,3 @@ class GoodReadsSpider(scrapy.Spider):
         for comment in commentList:
             res.append(''.join(comment.css(".reviewText::text").extract()).lstrip().rstrip())
         return res if len(res) > 0 else None
-
-
-    def getNumericRate(self, rate):
-        rateDict = {"did not like it" : 1, "it was ok" : 2, "liked it" : 3, 
-        "really liked it" : 4, "it was amazing" : 5}
-
-        return rateDict[rate]
