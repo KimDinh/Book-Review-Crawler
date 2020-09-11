@@ -97,14 +97,14 @@ class GoodReadsSpider(scrapy.Spider):
                     commentList = self.parse_comment(comment_page)
 
                 # add a review to res
-                res.append([{
+                res.append({
                     'UserName' : user_name,
                     'UserID' : user_id,
                     'Rate' : rate,
                     'Date' : date,
                     'Content' : content,
                     'Comment' : commentList
-                }])
+                })
 
             # check if there is another page of reviews
             try:
