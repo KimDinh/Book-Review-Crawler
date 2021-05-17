@@ -1,4 +1,4 @@
-# Test1
+# Book Review Crawler
 
 This book reviews crawler scrapes all the books' info, users' reviews, comments for the reviews on all pages from this [site](https://www.goodreads.com/author/list/4634532.Nguy_n_Nh_t_nh?page=1&per_page=30). The result is stored in `bookreviews.json`
 
